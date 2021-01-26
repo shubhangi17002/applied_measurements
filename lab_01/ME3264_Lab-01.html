@@ -1,0 +1,599 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ME 3264 - Applied Measurements Laboratory &#8212; Engineering Dynamics</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.2d2078699c18a0efb88233928e1cf6ed.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="ME3264-Lab_01" href="README.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">Engineering Dynamics</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to Applied Measurements
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="README.html">
+   ME3264-Lab_01
+  </a>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     ME 3264 - Applied Measurements Laboratory
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="#lab-1-heat-engine">
+     Lab #1 - Heat Engine
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/lab_01/ME3264_Lab-01.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/cooperrc/engineering-dynamics"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/cooperrc/engineering-dynamics/issues/new?title=Issue%20on%20page%20%2Flab_01/ME3264_Lab-01.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/cooperrc/engineering-dynamics/master?urlpath=tree/lab_01/ME3264_Lab-01.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://ugmelab.uconn.edu/hub/user-redirect/git-pull?repo=https://github.com/cooperrc/engineering-dynamics&urlpath=tree/engineering-dynamics/lab_01/ME3264_Lab-01.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   ME 3264 - Applied Measurements Laboratory
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lab-1-heat-engine">
+   Lab #1 - Heat Engine
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#objective">
+     Objective
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#basic-thermodynamics-concepts">
+     Basic thermodynamics concepts
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#system">
+       System
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#system-property">
+       System property
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#state">
+       State
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#process-and-cycle">
+       Process and cycle
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#first-law-of-thermodynamics">
+       First law of thermodynamics
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mechanical-and-thermodynamic-work">
+       Mechanical and thermodynamic work
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#work-during-the-cycles">
+       Work during the cycles
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#problem-1">
+       Problem 1
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#check-your-work">
+         Check your work
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#procedure">
+     Procedure
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#notes-on-error-propagation">
+     Notes on error propagation
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#references">
+     References
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">quad</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="me-3264-applied-measurements-laboratory">
+<h1>ME 3264 - Applied Measurements Laboratory<a class="headerlink" href="#me-3264-applied-measurements-laboratory" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="lab-1-heat-engine">
+<h1>Lab #1 - Heat Engine<a class="headerlink" href="#lab-1-heat-engine" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="objective">
+<h2>Objective<a class="headerlink" href="#objective" title="Permalink to this headline">¶</a></h2>
+<p>The objectives of this laboratory are :</p>
+<ol class="simple">
+<li><p>Determination of thermodynamic work done during a four-stage expansion and compression cycle by lifting masses from one height to another.</p></li>
+<li><p>Compare the useful mechanical work and the net thermodynamic work done during a cycle as determined via a p-V diagram.</p></li>
+</ol>
+</div>
+<div class="section" id="basic-thermodynamics-concepts">
+<h2>Basic thermodynamics concepts<a class="headerlink" href="#basic-thermodynamics-concepts" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="system">
+<h3>System<a class="headerlink" href="#system" title="Permalink to this headline">¶</a></h3>
+<p>The system is whatever we want to study. It may be as simple as a free body or
+as complex as an entire chemical refinery. Everything external to the system is considered to be part of the system’s surroundings.The system is distinguished from its surroundings by a specified boundary, which may be at rest or in motion.</p>
+<p>There are two basic kinds of systems - closed systems (control amss) and open systems (control volumes). A closed system refers to a fixed quantity of matter, whereas a control volume is a region of space through which mass may flow. For exmaple, a quantity of matter contained within a closed, rigid-walled tank is a closed system, while a pipeline through which natural gas flows can be considered as control volume. Closed systems are impermeable to mass but may be permeable to energy. When closed system are impermeable to both mass and energy transfer, the system is known as isolated system.</p>
+</div>
+<div class="section" id="system-property">
+<h3>System property<a class="headerlink" href="#system-property" title="Permalink to this headline">¶</a></h3>
+<p>To describe a system and predict its behavior requires knowledge of its properties
+and how those properties are related. A property is a macroscopic characteristic of a
+system such as mass, volume, energy, pressure, and temperature to which a numerical
+value can be assigned at a given time without knowledge of the previous behavior
+(history) of the system [2].</p>
+</div>
+<div class="section" id="state">
+<h3>State<a class="headerlink" href="#state" title="Permalink to this headline">¶</a></h3>
+<p>The word “state” refers to the condition of a system as described by its properties.
+Since there are normally relations among the properties of a system, the state often
+can be specified by providing the values of a subset of the properties. All other properties
+can be determined in terms of these few [2].</p>
+</div>
+<div class="section" id="process-and-cycle">
+<h3>Process and cycle<a class="headerlink" href="#process-and-cycle" title="Permalink to this headline">¶</a></h3>
+<p>When any of the properties of a system changes, the state changes and the system
+is said to undergo a process. If a system undergo sequence of processes that begins and ends at the same state, the system is said to complete thermodynamic cycle.</p>
+</div>
+<div class="section" id="first-law-of-thermodynamics">
+<h3>First law of thermodynamics<a class="headerlink" href="#first-law-of-thermodynamics" title="Permalink to this headline">¶</a></h3>
+<p>The first law of thermodynamics is a version of the law of conservation of energy, adapted for thermodynamic processes, distinguishing two kinds of transfer of energy, as heat and as thermodynamic work, and relating them to a amount of energy contained within a system.</p>
+<p>The energy balance can be expressed in symbols as:</p>
+<p><span class="math notranslate nohighlight">\(\Delta E = Q - W\)</span>   (1)</p>
+<p>where <span class="math notranslate nohighlight">\(\Delta E\)</span> is the change in amount of energy contained within a system, <span class="math notranslate nohighlight">\(Q\)</span> is the net amount of energy
+transferred in across the system boundary by heat transfer, and <span class="math notranslate nohighlight">\(W\)</span> is the  net amount of energy transferred out across the system boundary by work during the time interval.</p>
+<p>The total energy (<span class="math notranslate nohighlight">\(E\)</span>), is comprised of internal energy (<span class="math notranslate nohighlight">\(U\)</span>), kinetic energy (<span class="math notranslate nohighlight">\(KE\)</span>) and potential energy of the system (<span class="math notranslate nohighlight">\(PE\)</span>). Hence,</p>
+<p><span class="math notranslate nohighlight">\(\Delta E =\Delta KE+\Delta PE+\Delta U\)</span>   (2)</p>
+<p>if the changes in KE and PE are negligible (i.e. <span class="math notranslate nohighlight">\(\Delta KE=0, \Delta PE=0\)</span>), such as in stationary piston-cylinder engine, the Eq (1) tranforms to Eq (3)</p>
+<p><span class="math notranslate nohighlight">\(\Delta U = Q - W\)</span>   (3)</p>
+</div>
+<div class="section" id="mechanical-and-thermodynamic-work">
+<h3>Mechanical and thermodynamic work<a class="headerlink" href="#mechanical-and-thermodynamic-work" title="Permalink to this headline">¶</a></h3>
+<p>The mechanical work <span class="math notranslate nohighlight">\(W\)</span> done by, or on, a system evaluated in terms of macroscopically observable
+forces (<span class="math notranslate nohighlight">\(\vec{F}\)</span>) and displacements (<span class="math notranslate nohighlight">\(\vec{ds}\)</span>) is</p>
+<p><span class="math notranslate nohighlight">\(W =  \int_{s_1}^{s_2}\vec{F}.\vec{ds}\)</span>   (4)</p>
+<p>Consider an example of a closed system consisting of a gas (or liquid) contained in a piston–cylinder assembly as the gas expands. During the process, the gas pressure exerts a normal force on the piston. A graphical representation of a system with pressure – volume diagram (<span class="math notranslate nohighlight">\(p-V\)</span> ) diagram) is shown in Figure 1.</p>
+<center><img src="./figure_01.png" alt="Drawing" style="width: 300px;"/> </center>
+<center>Figure 1:  Work of a quasi-equillibrium expansion or compression process </center><p>The The force exerted by the gas on the piston is simply the product <span class="math notranslate nohighlight">\(pA\)</span>, where <span class="math notranslate nohighlight">\(A\)</span> is the area of the piston face. The work done by the system as the piston is displaced a distance <span class="math notranslate nohighlight">\(dx\)</span> is</p>
+<p><span class="math notranslate nohighlight">\(\delta W = pA dx\)</span>  (5)</p>
+<p>The product <span class="math notranslate nohighlight">\(A dx\)</span> equals the change in volume of the system, <span class="math notranslate nohighlight">\(dV\)</span>. Thus,</p>
+<p><span class="math notranslate nohighlight">\(\delta W = p dV\)</span>  (6)</p>
+<p>For a change in volume from <span class="math notranslate nohighlight">\(V_1\)</span> to <span class="math notranslate nohighlight">\(V_2\)</span>, the thermodynamic work during the process is obtained by integrating Eq(6)</p>
+<p><span class="math notranslate nohighlight">\(W =  \int_{V_1}^{V_2}p dV\)</span>   (7)</p>
+<p>Note: <span class="math notranslate nohighlight">\(\delta W\)</span> is used for work instead of <span class="math notranslate nohighlight">\(dW\)</span> since the differential of work (<span class="math notranslate nohighlight">\(W\)</span>) is inexact. Meaning, integral of <span class="math notranslate nohighlight">\(\delta W\)</span> cannot be evaluated without specifying the details of the process unlike integral of state properties differentials such as <span class="math notranslate nohighlight">\(\delta V\)</span>.</p>
+</div>
+<div class="section" id="work-during-the-cycles">
+<h3>Work during the cycles<a class="headerlink" href="#work-during-the-cycles" title="Permalink to this headline">¶</a></h3>
+<p>Consider the cycle shown in Figure 2. The cycle shown produces a net work output because the work done by the system during the expansion process (area under path A) is greater than the work
+done on the system during the compression part of the cycle (area under path B), and the difference between these two is the net work done during the cycle (the colored area, <span class="math notranslate nohighlight">\(W_{cycle}\)</span>).</p>
+<p><span class="math notranslate nohighlight">\(W_{cycle} = \oint p dV =  \int_{V_1}^{V_2}p dV +  \int_{V_2}^{V_1}p dV\)</span>   (8)</p>
+<center><img src="./figure_02.png" alt="Drawing" style="width: 300px;"/> </center>
+<center>Figure 2:  The net work done during a cycle is the difference between the work done
+by the system and the work done on the system. </center></div>
+<div class="section" id="problem-1">
+<h3>Problem 1<a class="headerlink" href="#problem-1" title="Permalink to this headline">¶</a></h3>
+<p>A gas in a piston–cylinder assembly undergoes an expansion process for which the relationship between pressure and volume is given by</p>
+<p><span class="math notranslate nohighlight">\(pV^n = constant\)</span></p>
+<p>The initial pressure is 3 bar, the initial volume is 0.1 m^3, and the final volume is 0.2 m^3. Determine the work for the process, in kJ, if (a) <span class="math notranslate nohighlight">\(n\)</span> = 1.5, (b) <span class="math notranslate nohighlight">\(n\)</span> = 1.0, and (c) <span class="math notranslate nohighlight">\(n\)</span> = 0.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">integrand</span><span class="p">(</span><span class="n">V</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">const</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;function to return the work done in polytropic process :</span>
+<span class="sd">    pV^n = const (this could be replaced with appropriate expressions for other processes)</span>
+<span class="sd">    This function integrates the integrand from V1 to V2 &#39;&#39;&#39;</span>
+    <span class="n">W</span> <span class="o">=</span> <span class="n">const</span><span class="o">/</span><span class="n">V</span><span class="o">**</span><span class="n">n</span>
+    <span class="k">return</span> <span class="n">W</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="mf">1.5</span>
+
+<span class="n">V1</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="c1"># m^3</span>
+<span class="n">V2</span> <span class="o">=</span> <span class="mf">0.2</span> <span class="c1"># m^3</span>
+<span class="n">p1</span> <span class="o">=</span> <span class="mi">3</span> <span class="c1"># bar</span>
+<span class="n">const</span> <span class="o">=</span> <span class="n">p1</span><span class="o">*</span><span class="mi">10</span><span class="o">**</span><span class="mi">5</span><span class="o">*</span><span class="n">V1</span><span class="o">**</span><span class="n">n</span>
+<span class="n">p2</span> <span class="o">=</span> <span class="n">const</span><span class="o">/</span><span class="p">(</span><span class="n">V2</span><span class="o">**</span><span class="n">n</span><span class="p">)</span>
+
+<span class="n">W</span> <span class="o">=</span> <span class="n">quad</span><span class="p">(</span><span class="n">integrand</span><span class="p">,</span> <span class="n">V1</span><span class="p">,</span> <span class="n">V2</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">const</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The work done during process, W = </span><span class="si">%1.2f</span><span class="s2"> kJ &quot;</span> <span class="o">%</span><span class="p">(</span><span class="n">W</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1000</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The work done during process, W = 17.57 kJ 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="check-your-work">
+<h4>Check your work<a class="headerlink" href="#check-your-work" title="Permalink to this headline">¶</a></h4>
+<p>P1. What is the work done during the process in the above exmaple if <span class="math notranslate nohighlight">\(n\)</span> = 1.4 , initial pressure is <span class="math notranslate nohighlight">\(5 bar\)</span>, the initial volume is <span class="math notranslate nohighlight">\(0.05 m^3\)</span> ?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># enter your work here</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="mf">1.4</span>
+
+<span class="n">V1</span> <span class="o">=</span> <span class="mf">0.05</span> <span class="c1"># m^3</span>
+<span class="n">V2</span> <span class="o">=</span> <span class="mf">0.2</span> <span class="c1"># m^3</span>
+<span class="n">p1</span> <span class="o">=</span> <span class="mi">5</span> <span class="c1"># bar</span>
+<span class="n">const</span> <span class="o">=</span> <span class="n">p1</span><span class="o">*</span><span class="mi">10</span><span class="o">**</span><span class="mi">5</span><span class="o">*</span><span class="n">V1</span><span class="o">**</span><span class="n">n</span>
+<span class="n">p2</span> <span class="o">=</span> <span class="n">const</span><span class="o">/</span><span class="p">(</span><span class="n">V2</span><span class="o">**</span><span class="n">n</span><span class="p">)</span>
+
+<span class="n">W</span> <span class="o">=</span> <span class="n">quad</span><span class="p">(</span><span class="n">integrand</span><span class="p">,</span> <span class="n">V1</span><span class="p">,</span> <span class="n">V2</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">const</span><span class="p">))</span>
+<span class="n">answer</span> <span class="o">=</span> <span class="n">W</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1000</span>  <span class="c1"># work output in kJ</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The work done during process, W = </span><span class="si">%1.2f</span><span class="s2"> kJ &quot;</span> <span class="o">%</span><span class="k">answer</span>)
+
+
+<span class="kn">import</span> <span class="nn">check_lab01</span> <span class="k">as</span> <span class="nn">p</span>
+<span class="n">p</span><span class="o">.</span><span class="n">check_p01</span><span class="p">(</span><span class="n">answer</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The work done during process, W = 26.60 kJ 
+Nice work!
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+</pre></div>
+</div>
+</div>
+</div>
+<p>P2. Consider a heat engine cycle in Figure 3. Heat engine is a system that converts heat or thermal energy to mechanical work.
+For the cycle in Figure 3, <span class="math notranslate nohighlight">\(V_1= 0.1 m^3\)</span>, <span class="math notranslate nohighlight">\(p1 = 3 bar\)</span> , <span class="math notranslate nohighlight">\(V_2= 0.3 m^3\)</span> <span class="math notranslate nohighlight">\(p3 = 1 bar\)</span></p>
+<center><img src="./figure_03.svg" alt="Drawing" style="width: 300px;"/> </center>
+<center>Figure 3:  p-V diagram of a cycle </center>
+<p>What is the net work outout from the cycle ?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># enter your work here</span>
+<span class="n">p1</span> <span class="o">=</span> <span class="mi">3</span> <span class="c1"># bar</span>
+<span class="n">V1</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="c1">#m^3</span>
+<span class="n">p3</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># bar</span>
+<span class="n">V2</span> <span class="o">=</span> <span class="mf">0.3</span><span class="c1">#m^3</span>
+
+<span class="n">answer</span> <span class="o">=</span> <span class="p">((</span><span class="n">p1</span><span class="o">*</span><span class="mi">10</span><span class="o">**</span><span class="mi">5</span><span class="o">*</span><span class="p">(</span><span class="n">V2</span><span class="o">-</span><span class="n">V1</span><span class="p">))</span><span class="o">+</span><span class="p">(</span><span class="n">p3</span><span class="o">*</span><span class="mi">10</span><span class="o">**</span><span class="mi">5</span><span class="o">*</span><span class="p">(</span><span class="n">V1</span><span class="o">-</span><span class="n">V2</span><span class="p">)))</span><span class="o">/</span><span class="mf">1000.</span> <span class="c1"># area under the p-V curve</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">answer</span><span class="p">)</span>  <span class="c1"># total work in kJ</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The work done during cycle, W = </span><span class="si">%1.2f</span><span class="s2"> kJ &quot;</span> <span class="o">%</span><span class="p">(</span><span class="n">answer</span><span class="p">))</span>
+
+<span class="kn">import</span> <span class="nn">check_lab01</span> <span class="k">as</span> <span class="nn">p</span>
+<span class="n">p</span><span class="o">.</span><span class="n">check_p02</span><span class="p">(</span><span class="n">answer</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>39.99999999999999
+The work done during cycle, W = 40.00 kJ 
+Nice work!
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="procedure">
+<h2>Procedure<a class="headerlink" href="#procedure" title="Permalink to this headline">¶</a></h2>
+<p>The procedure and details of the experiment are included in a lab-handout [3].</p>
+<p><a class="reference external" href="https://drive.google.com/file/d/1Rs5Y2JRM6zzzr3pvoqTJID6fvxpyuCTx/view?usp=sharing">ME3264_Lab_1_Heat_Engine.pdf</a></p>
+</div>
+<div class="section" id="notes-on-error-propagation">
+<h2>Notes on error propagation<a class="headerlink" href="#notes-on-error-propagation" title="Permalink to this headline">¶</a></h2>
+<p>The theory of error analysis gives a general formula for the uncertainty when a result is found by a calculation from a collection of measurements [4],. The formula is based on the idea of a first-order Taylor series expansion of functions of many variables. For a well behaved function <span class="math notranslate nohighlight">\(f(x,y,z,...)\)</span>
+of the completely independent physical variables <span class="math notranslate nohighlight">\(x,y,z,...\)</span> which have uncertainties <span class="math notranslate nohighlight">\(,\sigma_x,\sigma_y,\sigma_z,...\)</span> then the uncertainty in the value of the result <span class="math notranslate nohighlight">\(\sigma_f\)</span> is given by the formula:</p>
+<p><span class="math notranslate nohighlight">\(\sigma_f^2 = (\frac{\partial{f}}{\partial x})^2\sigma_x^2 + (\frac{\partial{f}}{\partial y})^2\sigma_y^2 + (\frac{\partial{f}}{\partial z})^2\sigma_z^2\)</span>   (9)</p>
+<p>For example, in this experiment, we are using external weights (<span class="math notranslate nohighlight">\(mg\)</span>) to compress volume of gas in the cylinder by height <span class="math notranslate nohighlight">\(h\)</span>. Work done by the force is:</p>
+<p><span class="math notranslate nohighlight">\(W = mgh\)</span>  (10)</p>
+<p>where, <span class="math notranslate nohighlight">\(g\)</span> is the gravitational accleration. Using Eq(9), the <span class="math notranslate nohighlight">\(\sigma_W\)</span> is obtained as:</p>
+<p><span class="math notranslate nohighlight">\(\sigma_W^2 = (\frac{\partial{W}}{\partial m})^2\sigma_m^2 + (\frac{\partial{g}}{\partial y})^2\sigma_g^2 + (\frac{\partial{W}}{\partial h})^2\sigma_h^2\)</span>   (11)</p>
+<p>Note :</p>
+<ul class="simple">
+<li><p>In Eq (11), for constant g , <span class="math notranslate nohighlight">\(\sigma_g = 0\)</span></p></li>
+<li><p>It’s a standard practice to use standard deviation as uncertainty in the measurement when multipe measurements are availabe</p></li>
+<li><p>If the measurement is made only once or if you get the same measurement a few times, the minimum uncertainty can be approximated with the value of the least significant digit (least-count) of the measurement display [[5]]. This is a more conservative way of accounting for uncertainties as you are assuming all sources of error are much smaller than the device’s uncertainty. (http://www.phys.lsu.edu/classes/phys2108/2108_measA.pdf)</p></li>
+</ul>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/First_law_of_thermodynamics">First law of thermodynamics, Wikipedia</a>.</p></li>
+<li><p>M.J. Moran and H.N. Shapiro, Fundamentals of Engineering Thermodynamics, Eighth Edition, Chapter 2.</p></li>
+<li><p>ME3264 Lab1 - Heat Engine, Prof. Bryan W. Weber (Spring 2020)</p></li>
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1WBDkb-9fM6Y-wmQF3pl28JAt8JReiKJl/view?usp=sharing">Notes on measurement uncertainties</a></p></li>
+<li><p><a class="reference external" href="http://www.phys.lsu.edu/classes/phys2108/2108_measA.pdf">Introduction to Measurement and Data Analysis Notes</a></p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./lab_01"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="README.html" title="previous page">ME3264-Lab_01</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Ryan C. Cooper<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>
