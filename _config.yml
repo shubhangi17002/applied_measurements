@@ -1,8 +1,8 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Engineering Dynamics
-author: Ryan C. Cooper
+title: Applied Measurements
+authors: Shubhangi Bansude and Ryan C. Cooper
 logo: dyn_logo.png
 
 # Force re-execution of notebooks on each build.
