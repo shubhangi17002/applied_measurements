@@ -5,3 +5,6 @@
 - file: lab_01/README
   sections:
     - file: lab_01/ME3264_Lab-01
+- file: lab_02/README
+  sections:
+    - file: lab_02/ME3264_Lab-02
